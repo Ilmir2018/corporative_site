@@ -1,9 +1,574 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:feature/project" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac920d1c-b1e1-4662-bfed-6f5993261c5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="ac920d1c-b1e1-4662-bfed-6f5993261c5b" name="Default Changelist" comment="begin">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/GenerateMenus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/MenuRepositories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_085800_create_articles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_090454_create_portfolio_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_090814_create_filters_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_090956_create_comments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_091501_create_sliders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_091629_create_menus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_091808_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_093125_change_articles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_093635_change_comments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_02_101030_change_portfolio_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/apple-touch-icon-114x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/apple-touch-icon-144x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/apple-touch-icon-57x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/apple-touch-icon-72x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/beetle-bus-goes-jamba-juice-4 (1).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/beetle-bus-goes-jamba-juice-4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/friends-and-foes-2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/hem-5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/identification-4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/indian-night-3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/indian-night-5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/mfast-3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/saffron-umbrella-5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/ultraviolet-rays-1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/buttons/view-over-the-town-5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/cache-custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/max-width-1024.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/max-width-320.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/max-width-480.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/max-width-768.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/darkskin/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/darkskin/skin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/defaultskin/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/defaultskin/skin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/glass/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/glass/skin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/lightskin/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/lightskin/skin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/minimal/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/minimal/skin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/skins/noskin/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/style-minifield.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/css/thickbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/fonts/fontawesome/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/fonts/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/fonts/fontawesome/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/001-205x185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/001-386x155.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/001-55x55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/001-816x282.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/00212-816x282.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/003-205x185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/003-55x55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/003-816x282.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/articles/0037-55x55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/11bfde47f09026a6cfcf8c741b7a28c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/Fotolia_20568380_Subscription_XXL-94x94.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/Fotolia_24730952_Subscription_XXL-94x94.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/Fotolia_7454857_Subscription_XXL-94x94.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/jasmine1-129x176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/nicola.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/nicola55.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/ricardo-94x94.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/samuel1-130x176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/susanna1-130x176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/thomas1-130x176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/unknow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/unknow55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/avatar/victor1-130x176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg-pagination.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg-tabs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg/0023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg/019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg/032.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg/bgblu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bg/tab-price-gradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/bird-twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/button-more-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/button-more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/buttons.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/callus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/categories.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/cite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/border.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderBottomCenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderBottomLeft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderBottomRight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderMiddleLeft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderMiddleRight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderTopCenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderTopLeft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/ie6/borderTopRight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/loading_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/colorbox/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/comments-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/customposttypewordpress.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/date-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/features/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/features/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/gradient-call-to-action.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/00111-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/00111.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0022-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0022.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/00313-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/00313.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0058-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0058.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0076-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0076.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0094-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-ix/0094.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-vi/00213.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-vi/00315.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-vi/0048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/home-vi/dd2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/article.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/blog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/bullet/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/bullet/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/bullet/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/bullet/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/bullet/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/calc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/cloud.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/calc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/gift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/offer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/for_button/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/home-85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/leave-comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/message/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/message/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/message/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/message/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/message/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/message/note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/next_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/prev_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/project.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/bag32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/box-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/box32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/brush-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/bubble32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/bulb32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/calendar32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/card-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/cart32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/cart48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/case.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/chart-bar (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/chart-bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/chart-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/chart32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/checkbox-checked (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/checkbox-checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/clipboard32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/coffee32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/diagram32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/doodles32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/gear32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/gift32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/gift48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/globe32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/info-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/info32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/label32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/letter32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/moleskine32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/monitor-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/monitor32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/mphone32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/mphone48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/new32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/open32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/open48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/pc32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/pencil32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/phone-black (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/phone-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/phone32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/pictures32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/refresh32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/shopbag32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/statistics32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/testimonial32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/set_icons/tick32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/delicious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/digg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/dribble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/ember.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/flickr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/forrst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/lastfm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/myspace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/pinterest.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/quora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/rss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/skype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/stumble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/tumblr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/vimeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/small-socials/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/delicious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/digg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/dribble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/ember.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/flickr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/forrst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/lastfm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/myspace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/pinterest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/quora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/rss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/skype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/stumble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/tumblr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/vimeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/socials/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/tick20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/icons/zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/ie_overlay_82.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/illustrator.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/input_pattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/input_pattern_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/landing-header1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/menu-select-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/phone-call-to-action.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_rounded/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_rounded/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_rounded/contentPattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_rounded/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_rounded/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_rounded/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_square/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_square/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_square/contentPattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_square/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_square/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/dark_square/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/default_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/sprite_next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/sprite_prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/sprite_x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/default/sprite_y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/contentPatternBottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/contentPatternLeft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/contentPatternRight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/contentPatternTop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/facebook/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_rounded/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_rounded/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_rounded/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_rounded/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_rounded/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_square/btnNext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_square/btnPrevious.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_square/default_thumbnail.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_square/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/prettyPhoto/light_square/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.bg.signup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.readmore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.single.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.unlim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/price.yes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0011-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0011-320x154.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0012-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0013-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0027-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0027-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0027.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0028-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0028.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0029-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0029.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/00311-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/00311-300x111.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/00311.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0034-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0034-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0034.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0035-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0035.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0038-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0038.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0043-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0043-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0043.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0045-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0045.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0052-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0052-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0052.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0054-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0054.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0061-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0061-320x154.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0061-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0061.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0063-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0063.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0071-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0071-320x154.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0071-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0071.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0072-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0072.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0073-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0073.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0081-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0081-320x154.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0081-385x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0081-700x345.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0081-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0081.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0082-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0082.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0083-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0083.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/009-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/009-320x154.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/009-770x368.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0091-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0091.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0092-260x168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/projects/0092.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/resp1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/services/WEB1-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/services/adv1-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/services/deisgn-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/services/editing1-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/services/foto-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/services/print-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/sezioneaurea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/shadows/bg-shadow-boxed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/shadows/shadow-938.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/shadows/thumb-testimonial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/00314.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/cycle-fixed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/cycle1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/cycle2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/cycle3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/dd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/widget-area.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-cycle/xx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/dolce11-150x59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/dolce11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/elastic-slider-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/love1-150x59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/love1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/red-passion1-150x59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/red-passion1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/sci11-150x59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/sci11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/xx21-150x59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-elastic/xx21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-flex/0018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-flex/0031.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-flex/0033.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-flex/bg_direction_nav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/011.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/021.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/031.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/033.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/041.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/043.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/051.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/052.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/053.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/055.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/062.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/064.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/071.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/072.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/074.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/081.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/091.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-layer/layer-fixed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/001-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0019-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0024-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0026-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0026.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/002b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/00310-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/00310.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0032-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0032.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0042-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0042.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0047-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0047.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/005-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0057-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0057.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/006-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0065-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0065.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/007-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0075-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0075.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/008-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0085-60x60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/0085.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/008b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/slider-thumbnails-arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/slider-thumbnails/white-opacity-80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/tipsy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/twitter-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/1-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/1-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/2-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/2-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/3-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/3-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/42-175x175.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/42-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/53-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/videos/6-365x192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/images/woman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/comment-reply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.anythingslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.aw-showcase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.colorbox-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.cycle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.eislideshow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.flexslider-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.mobilemenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.prettyPhoto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.quicksand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.tipsy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/jquery.tweetable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/layerslider.kreaturamedia.jquery-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/projects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/shortcodes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/slider-layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/js/testimonials.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pink/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/customMenuItems.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/layouts/site.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce9fc374-16db-4490-9648-f703332f48eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce9fc374-16db-4490-9648-f703332f48eb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +585,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1iJSKfi3ly0T0zhYIQNmALAYHiS" />
   <component name="ProjectViewState">
@@ -30,7 +596,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -42,8 +608,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601624138512</updated>
-      <workItem from="1601624139771" duration="1657000" />
+      <workItem from="1601624139771" duration="32164000" />
     </task>
+    <task id="LOCAL-00001" summary="begin">
+      <created>1601627066313</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601627066313</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,11 +646,19 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="begin" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601626606796">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601626606796" />
+    <state x="824" y="119" key="FileChooserDialogImpl" timestamp="1601634474637">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="824" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601634474637" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1601626763971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -93,10 +675,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601626763970" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601626885174">
+    <state x="0" y="172" key="NewPhpClassDialog" timestamp="1601995818282">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601626885174" />
+    <state x="0" y="172" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1601995818282" />
+    <state x="916" y="321" key="NewPhpFileDialog" timestamp="1601995825270">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="916" y="321" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1601995825270" />
+    <state x="466" y="65" key="RollbackChangesDialog" timestamp="1601627012956">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601627012956" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601627083971">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601627083971" />
     <state x="582" y="240" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601626647083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -105,9 +699,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="250" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1601626748712" />
-    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601626874636">
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601629143188">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1601626874636" />
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1601629143188" />
   </component>
 </project>
