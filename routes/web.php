@@ -20,6 +20,14 @@ Route::resource('/', \App\Http\Controllers\IndexController::class, [
     ]
 ]);
 
+Route::resource('portfolios', \App\Http\Controllers\PortfolioController::class)->parameters([
+    'portfolios' => 'alias'
+]);
+
+Route::resource('article', \App\Http\Controllers\ArticlesController::class)->parameters([
+    'article' => 'alias'
+]);
+
 //Route::get('/', function () {
 //    return view('welcome');
 //});
