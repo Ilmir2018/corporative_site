@@ -40,7 +40,7 @@ class IndexController extends SiteController
     {
         //
 
-        $portfolios = $this->getPortfolio();
+        $portfolios = $this->getPortfolio('*', Config::get('settings.home_port_count'), false);
 
         $content = view(env('THEME') . '.content')->with('portfolios', $portfolios)->render();
         $this->vars = Arr::add($this->vars, 'content', $content);

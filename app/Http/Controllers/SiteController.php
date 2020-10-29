@@ -11,7 +11,7 @@ class SiteController extends Controller
     //
 
     protected $p_rep;
-    protected $s_rep;
+    protected $c_rep;
     protected $a_rep;
     protected $m_rep;
 
@@ -43,9 +43,14 @@ class SiteController extends Controller
 
         if ($this->contentRightBar) {
             $rightBar = view(env('THEME') . '.rightbar')->with('content_rightBar', $this->contentRightBar)->render();
+            $this->vars = Arr::add($this->vars, 'rightBar', $rightBar);
         }
 
-        $this->vars = Arr::add($this->vars, 'rightBar', $rightBar);
+        if ($this->contentLeftBar) {
+            $leftBar = view(env('THEME') . '.contacts.leftbar')->with('content_leftBar', $this->contentLeftBar)->render();
+            $this->vars = Arr::add($this->vars, 'leftBar', $leftBar);
+        }
+
         $this->vars = Arr::add($this->vars, 'bar', $this->bar);
 
         $footer = view(env('THEME'). '.footer')->render();
@@ -62,8 +67,6 @@ class SiteController extends Controller
     {
 
         $menu = $this->m_rep->get();
-
-//        dd($menu);
 
         $mBuilder = \Menu::make('MyNav', function($m) use ($menu) {
 
@@ -94,15 +97,12 @@ class SiteController extends Controller
             return $item;
         });
 
-//        dd($sliders);
-
         return $sliders;
     }
 
-    protected function getPortfolio()
+    protected function getPortfolio($column, $count, $pagination)
     {
-        $portfolio = $this->p_rep->get('*', Config::get('settings.home_port_count'));
-
+        $portfolio = $this->p_rep->get($column, $count, $pagination);
         return $portfolio;
     }
 

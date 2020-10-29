@@ -28,12 +28,16 @@ Route::resource('article', \App\Http\Controllers\ArticlesController::class)->par
     'article' => 'alias'
 ]);
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('article/cat/{cat_alias?}', [\App\Http\Controllers\ArticlesController::class, 'index'])
+    ->name('articleCat')->where('cat_alias', '[\w-]+');
 
-//Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('comment', \App\Http\Controllers\CommentController::class)->parameters([
+    'only' => ['store']
+]);
+
+Route::match(['get', 'post'], '/contacts', [\App\Http\Controllers\ContactsController::class, 'index'])->name('contacts');
+
+
 
 

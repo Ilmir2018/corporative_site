@@ -12,4 +12,19 @@ class ArticlesRepository extends Repository
     {
         $this->model = $article;
     }
+
+    public function one($alias = false, $attr = [])
+    {
+        $article = parent::one($alias, $attr);
+
+        //Создается связь с таблицей comments а через
+        // эту таблицу создаётся связь с таблицей user
+        if ($article && !empty($attr)) {
+            $article->load('comments');
+            $article->comments->load('user');
+        }
+
+        return $article;
+
+    }
 }
