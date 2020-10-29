@@ -38,6 +38,8 @@ Route::resource('comment', \App\Http\Controllers\CommentController::class)->para
 
 Route::match(['get', 'post'], '/contacts', [\App\Http\Controllers\ContactsController::class, 'index'])->name('contacts');
 
-
+Route::get('login', [\App\Http\Controllers\Auth\LoginController::class, 'showLoginForm']);
+Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'login']);
+Route::get('logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout']);
 
 
