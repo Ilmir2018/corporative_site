@@ -21,7 +21,7 @@ class SiteController extends Controller
 
     protected $template;
 
-    protected $vars = [];
+    public $vars = [];
 
     protected $contentRightBar = false;
     protected $contentLeftBar = false;
@@ -63,7 +63,7 @@ class SiteController extends Controller
         return view($this->template)->with($this->vars);
     }
 
-    protected function getMenu()
+    public function getMenu()
     {
 
         $menu = $this->m_rep->get();
