@@ -19,11 +19,6 @@
                                 <span class="add-on"><i class="icon-user"></i></span>
                                 <input type="text" id="login" name="login" class="required">
                             </div>
-{{--                            @if($erorrs->has('name'))--}}
-{{--                                <span class="help-block">--}}
-{{--                                    <strong>{{ $errors->first('name') }}</strong>--}}
-{{--                                </span>--}}
-{{--                            @endif--}}
                         </li>
                         <li class="text-field">
                             <label for="password">
@@ -34,11 +29,6 @@
                                 <span class="add-on"><i class="icon-lock"></i></span>
                                 <input type="text" id="password" name="password" class="required">
                             </div>
-{{--                            @if($erorrs->has('name'))--}}
-{{--                                <span class="help-block">--}}
-{{--                                    <strong>{{ $errors->first('name') }}</strong>--}}
-{{--                                </span>--}}
-{{--                            @endif--}}
                         </li>
                         <li class="submit-button">
                             <input type="submit" name="yit-sendmail" value="Отправить" class="sendmail">

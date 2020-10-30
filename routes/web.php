@@ -42,4 +42,13 @@ Route::get('login', [\App\Http\Controllers\Auth\LoginController::class, 'showLog
 Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'login']);
 Route::get('logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout']);
 
+//admin
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+
+    //admin
+    Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('adminIndex');
+    Route::resource('/articles', \App\Http\Controllers\Admin\ArticlesController::class);
+
+});
+
 

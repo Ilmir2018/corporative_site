@@ -32,11 +32,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac920d1c-b1e1-4662-bfed-6f5993261c5b" name="Default Changelist" comment="begin">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_125542_change_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pink/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticlesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/admin/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/admin/navigation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pink/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pink/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +184,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zmarket" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -189,6 +193,7 @@
       <recent name="E:\OS new\OpenServer\domains\corporative_site\resources\views\pink" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OS new\OpenServer\domains\corporative_site\resources\views\pink\admin" />
       <recent name="E:\OS new\OpenServer\domains\corporative_site\resources\views\pink" />
       <recent name="E:\OS new\OpenServer\domains\corporative_site\resources\lang\ru" />
     </key>
@@ -210,7 +215,7 @@
       <workItem from="1601624139771" duration="39553000" />
       <workItem from="1602150096702" duration="18829000" />
       <workItem from="1602495365944" duration="52337000" />
-      <workItem from="1603788277253" duration="37864000" />
+      <workItem from="1603788277253" duration="45946000" />
     </task>
     <task id="LOCAL-00001" summary="begin">
       <created>1601627066313</created>
@@ -258,14 +263,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601626606796" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603962072629">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603983344978">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603962072629" />
-    <state x="509" y="114" key="FileChooserDialogImpl" timestamp="1603954539265">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603983344978" />
+    <state x="509" y="114" key="FileChooserDialogImpl" timestamp="1604044387944">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="509" y="114" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603954539265" />
+    <state x="509" y="114" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604044387944" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1602078853297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -286,10 +291,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="683" y="157" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1603900485303" />
-    <state x="916" y="321" key="NewPhpFileDialog" timestamp="1603964908218">
+    <state x="916" y="321" key="NewPhpFileDialog" timestamp="1603983562930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="916" y="321" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603964908218" />
+    <state x="916" y="321" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603983562930" />
     <state x="466" y="65" key="RollbackChangesDialog" timestamp="1601627012956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
