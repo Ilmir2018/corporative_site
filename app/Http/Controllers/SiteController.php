@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Repositories\MenuRepositories;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 
 class SiteController extends Controller
