@@ -32,22 +32,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac920d1c-b1e1-4662-bfed-6f5993261c5b" name="Default Changelist" comment="begin">
-      <change afterPath="$PROJECT_DIR$/app/Models/Permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_082617_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_082722_create_permissions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_082811_create_permission_role_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_082959_create_user_role_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_083434_change_user_role_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_083515_change_permission_role_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce9fc374-16db-4490-9648-f703332f48eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce9fc374-16db-4490-9648-f703332f48eb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ArticleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_101214_change_articles_table3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_101743_change_articles_table4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/admin/articles.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/admin/articles_content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pink/admin/articles_create_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/corporative_site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/corporative_site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/ArticlesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ArticlesRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_28_084834_change__articles__table2.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_084834_change__articles__table2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pink/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pink/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +141,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
@@ -143,7 +152,6 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
@@ -157,7 +165,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
@@ -179,6 +186,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iJSKfi3ly0T0zhYIQNmALAYHiS" />
@@ -190,7 +199,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zmarket" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -221,7 +230,7 @@
       <workItem from="1601624139771" duration="39553000" />
       <workItem from="1602150096702" duration="18829000" />
       <workItem from="1602495365944" duration="52337000" />
-      <workItem from="1603788277253" duration="58808000" />
+      <workItem from="1603788277253" duration="113798000" />
     </task>
     <task id="LOCAL-00001" summary="begin">
       <created>1601627066313</created>
@@ -269,14 +278,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601626606796" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604071665383">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604653563775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604071665383" />
-    <state x="509" y="114" key="FileChooserDialogImpl" timestamp="1604070999319">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604653563775" />
+    <state x="509" y="114" key="FileChooserDialogImpl" timestamp="1604651547500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="509" y="114" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604070999319" />
+    <state x="509" y="114" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604651547500" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1602078853297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -293,14 +302,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602078853247" />
-    <state x="683" y="157" key="NewPhpClassDialog" timestamp="1603900485303">
+    <state x="683" y="157" key="NewPhpClassDialog" timestamp="1604407699458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="683" y="157" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1603900485303" />
-    <state x="916" y="321" key="NewPhpFileDialog" timestamp="1603983562930">
+    <state x="683" y="157" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604407699458" />
+    <state x="916" y="321" key="NewPhpFileDialog" timestamp="1604409463431">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="916" y="321" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603983562930" />
+    <state x="916" y="321" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604409463431" />
     <state x="466" y="65" key="RollbackChangesDialog" timestamp="1601627012956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

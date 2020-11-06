@@ -69,4 +69,56 @@ abstract class Repository
         return $result;
     }
 
+    public function transliterate($string)
+    {
+        $str = mb_strtolower($string, 'UTF-8');
+
+        $leter_array = [
+            'a' => 'а',
+            'b' => 'б',
+            'v' => 'в',
+            'g' => 'г',
+            'd' => 'д',
+            'e' => 'е, э',
+            'jo' => 'ё',
+            'zh' => 'ж',
+            'z' => 'з',
+            'i' => 'и',
+            'ji' => '',
+            'j' => 'й',
+            'k' => 'к',
+            'l' => 'л',
+            'm' => 'м',
+            'n' => 'н',
+            'o' => 'о',
+            'p' => 'п',
+            'r' => 'р',
+            's' => 'с',
+            't' => 'т',
+            'u' => 'у',
+            'f' => 'ф',
+            'kh' => 'х',
+            'ts' => 'ц',
+            'ch' => 'ч',
+            'sh' => 'ш',
+            'shch' => 'щ',
+            '' => 'ъ',
+            'y' => 'ы',
+            '' => 'ь',
+            'yu' => 'ю',
+            'ya' => 'я',
+        ];
+
+        foreach ($leter_array as $letter => $kyr) {
+
+            $kyr = explode(',', $kyr);
+
+            $str = str_replace($kyr, $letter, $str);
+        }
+
+        $str = preg_replace('/(\s|[^A-Za-z0-9]\-)+/', '-', $str);
+        $str = trim($str, '-');
+        return $str;
+    }
+
 }

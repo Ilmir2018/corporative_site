@@ -12,6 +12,7 @@ class AdminController extends Controller
 
     protected $p_rep;
     protected $a_rep;
+    protected $c_rep;
 
     protected $user;
     protected $template;
@@ -26,9 +27,6 @@ class AdminController extends Controller
     {
 
         $this->user = Auth::user();
-//        if (!$this->user) {
-//            abort(403);
-//        }
 
     }
 

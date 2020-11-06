@@ -25,7 +25,8 @@ class ArticlesController extends SiteController
     }
 
     /**
-     * @param false $cat_alias Если есть прпметр в роутинге то можно соуществить просмотр например одной категории товаров
+     * @param false $cat_alias Если есть параметр в роутинге то
+     * можно осуществить просмотр например одной категории товаров
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @throws \Throwable
      */
@@ -96,10 +97,11 @@ class ArticlesController extends SiteController
             $article->img = json_decode($article->img);
         }
 
-        $this->title = $article->title;
-        $this->keywords = $article->keywords;
-        $this->meta_desc = $article->meta_desc;
-
+        if (isset($article->id)) {
+            $this->title = $article->title;
+            $this->keywords = $article->keywords;
+            $this->meta_desc = $article->meta_desc;
+        }
 
         $content = view(env('THEME').'.blog.article_content')->with('article', $article)->render();
         $this->vars = Arr::add($this->vars, 'content', $content);

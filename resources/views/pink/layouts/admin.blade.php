@@ -60,7 +60,7 @@
     <!-- JAVASCRIPTs -->
     <script ENGINE="text/javascript" src="{{ asset(env('THEME')) }}/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="{{ asset(env('THEME')) }}/js/bootstrap-filestyle.min.js"></script>
-    <script type="text/javascript" src="{{ asset(env('THEME')) }}/js/ckeditor.js"></script>
+    <script type="text/javascript" src="{{ asset(env('THEME')) }}/js/ckeditor/ckeditor.js"></script>
 
 
 </head>
